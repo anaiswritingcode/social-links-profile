@@ -89,7 +89,7 @@ body {
   display: grid;
   gap: 1.5rem;
   padding: 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.6rem;
   background-color: var(--gray-800);
 }
 
