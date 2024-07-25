@@ -92,3 +92,34 @@ body {
   border-radius: 0.75rem;
   background-color: var(--gray-800);
 }
+
+/** Header **/
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.header__img {
+  width: 5.5rem;
+  border-radius: 50%;
+}
+
+.header__title {
+  margin-bottom: 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.header__location {
+  font-weight: 600;
+  color: var(--green);
+}
+
+.header__desc {
+  font-weight: 300;
+  opacity: 0.9;
+}
