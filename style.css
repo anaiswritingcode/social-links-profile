@@ -1,0 +1,94 @@
+/** General styles **/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100svh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+li {
+  list-style-type: none;
+}
+
+/** General styles **/
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  padding: 1.5rem;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  color: var(--white);
+  background-color: var(--gray-900);
+  /* background: linear-gradient(
+    0deg,
+    rgba(230, 241, 198, 1) 0%,
+    rgba(236, 244, 235, 1) 100%
+  ); */
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+@media (min-width: 972px) {
+  /* Enable background-attachment fixed on desktop browsers */
+  body {
+    background-attachment: fixed;
+  }
+}
+
+.article {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--gray-800);
+}
