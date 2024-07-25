@@ -123,3 +123,23 @@ body {
   font-weight: 300;
   opacity: 0.9;
 }
+
+/** Footer **/
+
+.attribution {
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.attribution__links {
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.attribution__links:hover {
+  color: hsl(34, 78%, 85%);
+}
