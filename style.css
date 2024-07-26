@@ -54,7 +54,8 @@ li {
 /** General styles **/
 
 :root {
-  --green: hsl(75, 94%, 57%);
+  --blue: hsl(213, 100%, 58%);
+  --dark-blue: hsl(213, 80%, 15%);
   --white: hsl(0, 0%, 100%);
   --gray-700: hsl(0, 0%, 20%);
   --gray-800: hsl(0, 0%, 12%);
@@ -69,11 +70,7 @@ body {
   font-family: Inter, sans-serif;
   color: var(--white);
   background-color: var(--gray-900);
-  /* background: linear-gradient(
-    0deg,
-    rgba(230, 241, 198, 1) 0%,
-    rgba(236, 244, 235, 1) 100%
-  ); */
+  background: linear-gradient(0deg, var(--gray-900) 0%, var(--dark-blue) 100%);
   background-attachment: scroll;
   background-size: cover;
 }
@@ -91,6 +88,8 @@ body {
   padding: 1.5rem;
   border-radius: 0.6rem;
   background-color: var(--gray-800);
+  border: 1px solid var(--gray-700);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.03);
 }
 
 /** Header **/
@@ -116,7 +115,7 @@ body {
 
 .header__location {
   font-weight: 600;
-  color: var(--green);
+  color: var(--blue);
 }
 
 .header__desc {
@@ -137,6 +136,11 @@ body {
   text-align: center;
   border-radius: 0.6rem;
   background-color: var(--gray-700);
+  transition: all ease 0.3s;
+}
+
+.nav__list > *:hover {
+  background-color: var(--blue);
 }
 
 /** Footer **/
@@ -145,16 +149,16 @@ body {
   padding: 0 0.5rem;
   margin-top: 1rem;
   text-align: center;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .attribution__links {
-  color: var(--green);
+  color: var(--blue);
   font-weight: 600;
   text-decoration: none;
   transition: all ease 0.3s;
 }
 
 .attribution__links:hover {
-  color: hsl(34, 78%, 85%);
+  color: var(--white);
 }
