@@ -1,6 +1,6 @@
 # Social links profile (ocean theme) | Frontend Mentor
 
-![Image preview](./design/desktop-preview.jpg)
+![Image preview](./design/preview.jpg)
 
 This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ/hub) that takes **responsive design** into account.
 
